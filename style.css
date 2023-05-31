@@ -1,0 +1,83 @@
+body{
+    background: #E5E5E5;
+    font-family:'Courier New', Courier, monospace;
+}
+main{
+    height: 100vh;
+}
+.contenedor-cajas{
+    display: flex;
+    height: 90%;
+}
+/* TEXTO A INGRESAR */
+.caja-texto{
+    width: 65%;
+    height: 80%;
+    /* background: red; */
+    margin-left: 33px;
+}
+#texotarea{
+    outline: none;
+    background:#E5E5E5;
+    width: 99%;
+    height: 100%;
+    font-size: 28px;
+    color: #0A3871;
+    resize: none;
+    border-radius: 32px;
+    border: none;
+    text-align: center;
+    text-transform: lowercase;
+}
+#texotarea::placeholder{
+    color: #0A3871;
+    font-size: 25px;
+}
+.caja-texto form{
+    height: 99%;
+    
+}
+/* AQUI TERMINA EL TEXTO A INGRESAR */
+
+/* TEXTO PROCESADO */
+.texto-encriptado{
+    width: 24%;
+    margin: 2%;
+    height: 100%;
+    border-radius: 32px;
+    background: rgb(255, 255, 255);
+    text-align: center;
+}
+.texto-encriptado img{
+    width: 65%;
+    margin: 15%;
+    margin-top: 35%;
+}
+.texto-encriptado button{
+    width: 80%;
+    margin-top: 15%;
+}
+/* AQUI TERMINA EL TEXTO PROCESADO */
+
+/* BOTONES */
+.boton1{
+    width: 328px;
+    height: 67px;
+    border: none;
+    margin: -90% 1px; 
+    border-radius: 24px;
+    background: #0A3871;
+    color: aliceblue;
+    cursor: pointer;
+}
+.boton2{
+    width: 328px;
+    height: 67px;
+    border: none;
+    /* margin: 10px 50px; */
+    border-radius: 24px;
+    background: #0a38715f;
+    color: aliceblue;
+    cursor: pointer;
+}
+/* AQUI TERMINAN LOS BOTONES */
