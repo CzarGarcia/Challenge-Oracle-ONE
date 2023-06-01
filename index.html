@@ -9,16 +9,16 @@
 </head>
 <body>
     <main>
-        
+      
         <img src="./imagenes/Vector.png" alt="Logo Alura" id="logo">
         <div class="contenedor-cajas">
             <div class="caja-texto">
                 <form action="">
                     <textarea name="" id="textotarea" cols="50" placeholder="Ingresa el texto a encriptar" style="border: none;"></textarea>
-                    <!-- <input type="text" placeholder="Ingrese texto a encriptar" required> -->
                 </form>
             </div>
             <div class="texto-encriptado">
+                <button onclick="toggleModoObscuro()" class="modoObscuro">Modo Oscuro</button>
                 <div id="muñeco">
                     <img src="./imagenes/Muneco.png" alt="">
                     <p><strong>Mensaje no encontrado</strong></p>
@@ -36,7 +36,6 @@
             <button class="boton2" id="desencriptar">Desencriptar</button>
         </div>
         </main>
-
         <script src="js.js"></script>
     </body>
 </html>

@@ -33,6 +33,13 @@ main{
     text-align: center;
     text-transform: lowercase;
 }
+
+#textotarea::-webkit-scrollbar {
+    width: 8px;
+    background-color: #f1f1f1b3;
+  
+
+}
 #textotarea::placeholder{
     color: #0A3871;
     font-size: 25px;
@@ -60,7 +67,7 @@ main{
 }
 .texto-encriptado button{
     width: 80%;
-    margin-top: 15%;
+    margin-top: 1%;
 }
 .mostrar{
     display: none;
@@ -68,9 +75,9 @@ main{
 .mostrar textarea{
     width: 80%;
     height: 80%;
-    margin: 9% 9%;
+    margin-top: 5%;
     border: none;
-    margin-bottom: -12%;
+    margin-bottom: -5%;
     outline: none;
     color:#0A3871;
     font-size: 150%;
@@ -105,8 +112,64 @@ main{
     border-color: #0A3871;
     cursor: pointer;
 }
+.texto-encriptado button{
+    margin-top: 10px;
+    width:40% ;
+}
+.modoObscuro{
+    border: none;
+    background: #0A3871;
+    border-radius: 32px;
+    color: #E5E5E5;
+    height: 5%;
+}
+
+
 
 .botones{
     margin: -7% 5%;
 }
 /* AQUI TERMINAN LOS BOTONES */
+
+.modo-obscuro {
+    background: #2d2b2b;
+}
+.modo-obscuro #textotarea{
+    background: #2d2b2bc7;
+    border-radius: 10px;
+    color: #E5E5E5;
+}
+.modo-obscuro #textotarea::-webkit-scrollbar {
+    width: 8px;
+    background-color: #f1f1f114;
+  
+
+}
+.modo-obscuro .texto-encriptado{
+    background: #3e3e3e;
+    color: #E5E5E5;
+}
+.modo-obscuro .mostrar textarea{
+    background: #3e3e3e;
+    color: #E5E5E5;
+    /* font-size: large; */
+}
+.modo-obscuro .boton1{
+    font-size: large;
+}
+.modo-obscuro .boton2{
+  background: #e5e5e596;
+  font-size: large;
+}
+.modo-obscuro #textotarea::placeholder{
+    color: #E5E5E5;
+   
+}
+
+
+/* TABLETA */
+@media (min-width: 768px) and (max-width: 1024px){
+    #textotarea{
+        background: red;
+    }
+  }

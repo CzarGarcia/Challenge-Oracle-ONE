@@ -58,6 +58,12 @@ function copiarTexto(){
     }, 1000);
 }
 
+function toggleModoObscuro() {
+    var body = document.body;
+    body.classList.toggle("modo-obscuro");
+  }
+  
+
 var btn = document.querySelector("#encriptar");
 btn.onclick = encriptar;
 
