@@ -10,27 +10,33 @@
 <body>
     <main>
         
-        <!-- <img src="./imagenes/Vector.png" alt=""> -->
+        <img src="./imagenes/Vector.png" alt="Logo Alura" id="logo">
         <div class="contenedor-cajas">
             <div class="caja-texto">
                 <form action="">
-                    <textarea name="" id="texotarea" cols="50" placeholder="Ingresa el texto a encriptar" style="border: none;"></textarea>
+                    <textarea name="" id="textotarea" cols="50" placeholder="Ingresa el texto a encriptar" style="border: none;"></textarea>
                     <!-- <input type="text" placeholder="Ingrese texto a encriptar" required> -->
                 </form>
             </div>
             <div class="texto-encriptado">
-                <img src="./imagenes/Muneco.png" alt="">
-                <p><strong>Mensaje no encontrado</strong></p>
-                <p>Ingresa el texto que deseas encriptar</p>
-                <button class="boton2">Copiar</button>
+                <div id="muñeco">
+                    <img src="./imagenes/Muneco.png" alt="">
+                    <p><strong>Mensaje no encontrado</strong></p>
+                    <p>Ingresa el texto que deseas encriptar</p>
+                </div>
+                <div class="mostrar" id="mostrar">
+                    <textarea name="" id="textoEncriptado" cols="30" rows="10" readonly></textarea>
+                    <div id="mensajeCopiado" style="display: none;">Texto copiado</div>
+                    <button class="boton2" id="copiar">Copiar</button>
+                </div>
             </div>
         </div>
-            <button class="boton1">Encriptar</button>
-            <button class="boton2">Desencriptar</button>
+        <div class="botones">
+            <button class="boton1" id="encriptar">Encriptar</button>
+            <button class="boton2" id="desencriptar">Desencriptar</button>
+        </div>
         </main>
-        <footer>
 
-        </footer>
         <script src="js.js"></script>
     </body>
 </html>
